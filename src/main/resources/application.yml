@@ -8,10 +8,10 @@ spring:
     oauth2:
       client:
         registration:
-          blimpclient:
+          blimp-gateway:
             client-id: clientid
             client-secret: clientsecret
-            client-name: blimpclient
+            client-name: blimp-gateway
             scope: user_info
             provider: nyx
             redirect-uri: http://localhost:8082/login/oauth2/code/

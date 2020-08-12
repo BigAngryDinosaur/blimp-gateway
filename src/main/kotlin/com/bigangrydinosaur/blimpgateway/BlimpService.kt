@@ -1,4 +1,4 @@
-package com.bigangrydinosaur.blimpclient
+package com.bigangrydinosaur.blimpgateway
 
 import org.springframework.stereotype.Service
 import org.springframework.web.reactive.function.client.WebClient

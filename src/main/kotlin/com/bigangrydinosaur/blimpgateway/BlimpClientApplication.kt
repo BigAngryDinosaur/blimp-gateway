@@ -1,4 +1,4 @@
-package com.bigangrydinosaur.blimpclient
+package com.bigangrydinosaur.blimpgateway
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

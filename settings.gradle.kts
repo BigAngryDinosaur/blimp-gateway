@@ -12,4 +12,4 @@ pluginManagement {
 		}
 	}
 }
-rootProject.name = "blimpclient"
+rootProject.name = "blimp-gateway"

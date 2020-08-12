@@ -1,9 +1,8 @@
-package com.bigangrydinosaur.blimpclient
+package com.bigangrydinosaur.blimpgateway
 
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 import org.springframework.web.server.ResponseStatusException
-import java.time.LocalDateTime
 import javax.servlet.http.HttpServletResponse
 
 data class UrlRequest(val url: String)
