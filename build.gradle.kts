@@ -27,7 +27,17 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.springframework.boot:spring-boot-starter-security")
+	implementation("org.springframework.cloud:spring-cloud-starter-netflix-zuul")
+	implementation("org.springframework.session:spring-session-data-redis")
+	implementation("org.springframework.boot:spring-boot-starter-data-redis")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+}
+
+dependencyManagement {
+	imports {
+		mavenBom("org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR8")
+	}
 }
 
 tasks.withType<Test> {

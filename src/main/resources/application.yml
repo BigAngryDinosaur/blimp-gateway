@@ -6,6 +6,19 @@ spring:
     user:
       name: test
       password: test@123
+
+zuul:
+  routes:
+    urlshortener:
+      path: /api/url
+      url: http://localhost:8083
+      sensitive-headers:
+    shortlink:
+      path: /u/**
+      url: http://localhost:8083/u
+      sensitive-headers:
+
+
 #spring:
 #  security:
 #    oauth2:

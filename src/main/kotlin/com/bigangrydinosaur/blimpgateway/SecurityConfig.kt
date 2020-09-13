@@ -22,7 +22,7 @@ class SecurityConfig: WebSecurityConfigurerAdapter() {
             .logout().and()
             .httpBasic().and()
             .authorizeRequests()
-            .antMatchers("/", "/home", "/login").permitAll()
+            .antMatchers("/", "/home", "/login", "/u/**").permitAll()
             .anyRequest().authenticated()
     }
 
