@@ -1,25 +1,28 @@
 server:
   port: 8082
-  session:
-    cookie:
-      name: UISESSION
+
 spring:
   security:
-    oauth2:
-      client:
-        registration:
-          blimp-gateway:
-            client-id: clientid
-            client-secret: clientsecret
-            client-name: blimp-gateway
-            scope: user_info
-            provider: nyx
-            redirect-uri: http://localhost:8082/login/oauth2/code/
-            client-authentication-method: basic
-            authorization-grant-type: authorization_code
-        provider:
-          nyx:
-            token-uri: http://localhost:8081/auth/oauth/token
-            authorization-uri: http://localhost:8081/auth/oauth/authorize
-            user-info-uri: http://localhost:8081/auth/user/me
-            user-name-attribute: name
+    user:
+      name: test
+      password: test@123
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          blimp-gateway:
+#            client-id: clientid
+#            client-secret: clientsecret
+#            client-name: blimp-gateway
+#            scope: user_info
+#            provider: nyx
+#            redirect-uri: http://localhost:8082/login/oauth2/code/
+#            client-authentication-method: basic
+#            authorization-grant-type: authorization_code
+#        provider:
+#          nyx:
+#            token-uri: http://localhost:8081/auth/oauth/token
+#            authorization-uri: http://localhost:8081/auth/oauth/authorize
+#            user-info-uri: http://localhost:8081/auth/user
+#            user-name-attribute: name
